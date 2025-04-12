@@ -1,0 +1,8 @@
+## Gitignore file for a project
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Resource files
+Zips/
+Papers/
