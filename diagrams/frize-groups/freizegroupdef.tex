@@ -1,0 +1,18 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \node[scale=2] at (-0.2, 1) {\ldots};
+    \foreach \j in {0,...,2} {
+        \draw[red, very thick] (0.5+3*\j,0) rectangle (3.5+3*\j,2);
+        \node at (2 + 3*\j, 1) {Pattern};
+    }
+    % Add ellipsis at the end
+    \node[scale=2] at (10.4, 1) {\ldots};
+\end{tikzpicture}
+
+\end{document}

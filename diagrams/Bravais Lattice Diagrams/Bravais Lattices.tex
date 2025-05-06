@@ -1,0 +1,51 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+\usepackage{import}
+
+\begin{document}
+\begin{minipage}{0.3\linewidth}
+    \centering
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{Bravais Lattice Diagrams/Square Lattice}
+        \caption*{Square Cell}
+        \label{fig:square-cell}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \input{Bravais Lattice Diagrams/Hexagon Lattice}
+        \caption*{Hexagon Cell}
+        \label{fig:hexagon-cell}
+    \end{subfigure}
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}{0.9\linewidth}
+    \centering
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{Bravais Lattice Diagrams/Rectangle Lattice}
+        \caption*{Rectangle Cell}
+        \label{fig:rectangle-cell}
+    \end{subfigure}  
+    \vfill
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{Bravais Lattice Diagrams/Rhombic Lattice}
+        \caption*{Rhombic Cell}
+        \label{fig:rhombic-cell}
+    \end{subfigure}
+    \vfill
+    % Oblique
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{Bravais Lattice Diagrams/Obilque Lattice}
+        \caption*{Oblique Cell}
+        \label{fig:oblique-cell}
+    \end{subfigure}
+\end{minipage}
+
+\end{document}

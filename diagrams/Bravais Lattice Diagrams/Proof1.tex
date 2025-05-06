@@ -1,0 +1,43 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}
+    % Define the number of sides and the radius
+    \def\sides{8}
+    \def\radius{3}
+    \def\smallradius{2.3}
+    \def\angle{360/\sides}
+    \def\sidelength{2*\radius*sin(180/\sides)} % Side length of the first octagon
+
+    %\def\smallradius{{\sin(\angle)}}
+
+    
+    \fill[red]  (0,0) circle(3.5pt);
+    
+    \fill  \foreach \i in {0,...,\sides} {(\i*\angle:\radius) circle(3.5pt)};
+
+    %\fill[red]  \foreach \i in {0,...,\sides} {(\i*\angle-0.5*\angle:\smallradius) circle(3.5pt)};
+    
+    % Draw the first octagon using a foreach loop
+    %\draw[thick]
+        \foreach \i in {0,1,...,\sides} {
+            (\i*\angle:\radius) -- (\i*\angle+\angle:\radius)
+        } -- cycle;
+
+
+    % Draw the second octagon shifted by half a side length
+    %\draw[thick, red]
+        \foreach \i in {0,1,...,\sides} {
+            (\i*\angle-0.5*\angle:\sidelength) -- (\i*\angle+0.5*\angle:\sidelength)
+    } -- cycle;
+
+
+    \draw[blue] (1*\angle:\radius) -- (2*\angle:\radius){};
+    \draw[blue] (0,0) --($(5*\angle:\radius) - (6*\angle:\radius)$){};
+    
+\end{tikzpicture}
+\end{document}
