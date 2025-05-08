@@ -1,0 +1,65 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+\usetikzlibrary {shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}
+            % Define the lengths of the sides and the angle
+            \def\a{3}  % length of side a
+            \def\b{3}  % length of side b
+            \def\angle{90}  % angle between sides a and b
+            \def\s{F}
+        
+            % Calculate the coordinates of the points
+            \coordinate (C00) at (0, 0);
+            \coordinate (C10) at (\a, 0);
+            \coordinate (C11) at ({\a + \b*cos(\angle)}, {\b * sin(\angle)});
+            \coordinate (C01) at ({\b * cos(\angle)}, {\b * sin(\angle)});
+            \coordinate (C02) at ({2*\b*cos(\angle)}, {2*\b * sin(\angle)});
+            \coordinate (C12) at ({\a +2*\b * cos(\angle)}, {2*\b * sin(\angle)});
+            \coordinate (C22) at ({2*\a + 2*\b * cos(\angle)}, {2*\b * sin(\angle)});
+            \coordinate (C21) at ({2*\a + \b*cos(\angle)}, {\b * sin(\angle)});
+            \coordinate (C20) at ({2*\a}, 0);
+        
+            % Draw the oblique unit cell
+            \draw[thick,fill=gray] (C00) -- (C20) -- (C22) -- (C02) -- cycle;
+            \draw[thick,fill=yellow] (C01) -- (C10) -- (C11) -- cycle;
+            \draw[ultra thick] (C10) -- (C21) -- (C12) -- (C01) -- cycle;
+
+            
+            % Draw mirrow lines
+            \draw[dashed] ($(C00)!0.5!(C10)$) -- ($(C02)!0.5!(C12)$);
+            \draw[thin] (C10) -- (C12);
+            \draw[dashed] ($(C10)!0.5!(C20)$) -- ($(C12)!0.5!(C22)$);
+            \draw[dashed] ($(C00)!0.5!(C01)$) -- ($(C20)!0.5!(C21)$);
+            \draw[thin] (C01) -- (C21);
+            \draw[dashed] ($(C01)!0.5!(C02)$) -- ($(C21)!0.5!(C22)$);
+            
+            % Draw chiral center
+            \node[rotate=180] at ($(C11)!0.6666!(C00)$) {\huge \s};
+            \node at ($(C11)!0.3333!(C00)$) {\huge \s};
+            \node[rotate=90] at ($(C11)!0.6666!(C02)$) {\reflectbox{\huge \s}};
+            \node[rotate=-90] at ($(C11)!0.3333!(C02)$) {\huge \s};
+            \node at ($(C11)!0.6666!(C22)$) {\reflectbox{\huge \s}};
+            \node[rotate=180] at ($(C11)!0.3333!(C22)$) {\huge \s};
+            \node[rotate=-90] at ($(C11)!0.6666!(C20)$) {\huge \s};
+            \node[rotate=90] at ($(C11)!0.3333!(C20)$) {\reflectbox{\huge 
+            \s}};
+
+            % Draw node reflections
+            \draw (C00)  node[minimum size=0.5cm,draw,fill=green] {};
+            \draw (C10)  node[shape aspect=0.5,diamond,draw,fill=blue] {};
+            \draw (C11)  node[minimum size=0.5cm,draw,fill=green] {};
+            \draw (C01)  node[shape aspect=0.5,diamond,draw,fill=blue] {};
+            \draw (C02)  node[minimum size=0.5cm,draw,fill=green] {};
+            \draw (C12)  node[shape aspect=0.5,diamond,draw,fill=blue] {};
+            \draw (C22)  node[minimum size=0.5cm,draw,fill=green] {};
+            \draw (C21)  node[shape aspect=0.5,diamond,draw,fill=blue] {};
+            \draw (C20)  node[minimum size=0.5cm,draw,fill=green] {};
+
+            %\draw ($(A)!0.5!(E)$) node[shape aspect=0.5,diamond,draw,fill=black] {};
+            
+        \end{tikzpicture}
+\end{document}

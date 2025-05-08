@@ -23,6 +23,7 @@
 \usepackage{subcaption}
 \usetikzlibrary{calc}
 \usetikzlibrary {shapes.geometric}
+\usepackage{standalone} 
 
 %Defines theorem enviroments
 \theoremstyle{definition}
@@ -55,21 +56,26 @@
     \end{figure}
 \end{frame}
 
-% \begin{frame}{Lattices}
-%     \begin{figure}
-%         \centering
-%         \input{diagrams/Bravais Lattice Diagrams/Bravais Lattices}
-%         \caption{Caption}
-%         \label{fig:enter-label}
-%     \end{figure}
-% \end{frame}
+\begin{frame}{Bravais Lattices}
+    \begin{figure}
+        \centering
+        % \resizebox{0.9\columnwidth}{!}{%
+        \input{diagrams/bravais-lattices}
+        \caption{All five two‐dimensional Bravais unit cells.}
+        \label{fig:bravis-lattices}
+    \end{figure}
+    % \input{diagrams/bravais-lattices}
+\end{frame}
+
+
 
 
 \begin{frame}{Wallpaper groups}
     \begin{figure}
         \centering
-        % \includegraphics[width=0.9\textwidth]{Figures/WallpaperGroupsExample.png}
-        \caption{The 17 wallpaper groups \cite{Clark1}}
+        % \input{diagrams/Wallpaper Group Diagrams/AllGroups}
+        \input{diagrams/all-wallpaper-groups}
+        \caption{The 17 wallpaper groups }
         \label{fig:17WallpaperGroups}
     \end{figure}
 \end{frame}
@@ -86,6 +92,14 @@
         \caption{Penrose tilling}
         \label{fig:penrose-rhombi}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Additionally Resources}
+    
+\end{frame}
+
+\begin{frame}{References}
+    
 \end{frame}
 
 

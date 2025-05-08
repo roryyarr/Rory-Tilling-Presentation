@@ -1,0 +1,123 @@
+\documentclass[class=beamer, crop=false]{standalone}
+%\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+\usetikzlibrary {shapes.geometric}
+\usepackage{graphicx}
+\usepackage{standalone} 
+
+
+\begin{document}
+
+% \begin{frame}{The 17 Wallpaper Groups}
+
+  % ─── First row: 6 diagrams ───────────────────────────────────────────
+  %── p1 ─────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.20\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p1}\\[-0.5ex]
+    {\footnotesize\textbf{p1}}
+  \end{minipage}%
+  \hspace{-0.4em}% ← adjust this
+  %── p2 ─────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.17\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p2}\\[-0.5ex]
+    {\footnotesize\textbf{p2}}
+  \end{minipage}%
+  \hspace{0.2em}% ← adjust this
+  %── pm ─────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.15\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pm}\\[-0.5ex]
+    {\footnotesize\textbf{pm}}
+  \end{minipage}%
+  \hspace{0.5em}% ← adjust this
+  %── pg ─────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.14\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pg}\\[-0.5ex]
+    {\footnotesize\textbf{pg}}
+  \end{minipage}%
+  \hspace{0.2em}% ← adjust this
+  %── cm ─────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.145\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/cm}\\[-0.5ex]
+    {\footnotesize\textbf{cm}}
+  \end{minipage}%
+  \hspace{0.2em}% ← adjust this
+  %── pmm ────────────────────────────────────────────────────────────
+  \begin{minipage}[t]{0.15\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pmm}\\[-0.5ex]
+    {\footnotesize\textbf{pmm}}
+  \end{minipage}
+
+  \vspace{1em}
+
+  % ─── Second row: 6 diagrams ──────────────────────────────────────────
+  \begin{columns}[t,onlytextwidth]
+    \column{0.15\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/pmg}
+      \\[-0.5ex]\footnotesize\textbf{pmg}
+
+    \column{0.15\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/pgg}
+      \\[-0.5ex]\footnotesize\textbf{pgg}
+
+    \column{0.16\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/cmm}
+      \\[-0.5ex]\footnotesize\textbf{cmm}
+
+      \column{0.16\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/p4}
+      \\[-0.5ex]\footnotesize\textbf{p4}
+
+    \column{0.16\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/p4m}
+      \\[-0.5ex]\footnotesize\textbf{p4m}
+
+    \column{0.16\textwidth}\centering
+      \includestandalone[width=0.9\columnwidth]{diagrams/wallpaper-groups/p4g}
+      \\[-0.5ex]\footnotesize\textbf{p4g}
+
+  \end{columns}
+
+  \vspace{1em}
+
+  % ─── Third row: 5 diagrams ───────────────────────────────────────────
+  \begin{minipage}[t]{0.2\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p3}\\[-0.5ex]
+    {\footnotesize\textbf{p3}}
+  \end{minipage}%
+  % \hspace{-0.2em}% <<–– try -0.8em, -1em, -1.2em etc.
+  \begin{minipage}[t]{0.19\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p3m1}\\[-0.5ex]
+    {\footnotesize\textbf{p3m1}}
+  \end{minipage}%
+  % \hspace{-0.2em}%
+  \begin{minipage}[t]{0.2\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p31m}\\[-0.5ex]
+    {\footnotesize\textbf{p31m}}
+  \end{minipage}%
+  % \hspace{-0.2em}%
+  \begin{minipage}[t]{0.2\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p6}\\[-0.5ex]
+    {\footnotesize\textbf{p6}}
+  \end{minipage}%
+  % \hspace{-0.2em}%
+  \begin{minipage}[t]{0.2\textwidth}
+    \centering
+    \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p6m}\\[-0.5ex]
+    {\footnotesize\textbf{p6m}}
+  \end{minipage}
+
+% \end{frame}
+
+\end{document}
