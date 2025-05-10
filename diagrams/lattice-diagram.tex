@@ -1,0 +1,24 @@
+\documentclass[class=beamer, crop=false]{standalone}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+            \def\a{2}  % length of side a
+            \def\b{3}  % length of side b
+
+            \foreach \i in {0,...,6} {
+                \foreach \j in {0,...,3} {
+                     \fill[blue]  (\i*\a,\j*\b) circle(3.5pt);
+                }
+            }
+            % Draw vector
+            \coordinate (P) at (3*\a, 2*\b);
+            \draw[thick,->] (0,0) -- (P) node[above right] {\huge $p$};
+
+            % Draw lattice parameters
+            \draw (0,0) -- (\a,0) node[midway,below] {\huge$\Vec{b}$};
+            \draw (0,0) -- (0,\b) node[midway,left] {\huge$\Vec{a}$};
+        \end{tikzpicture}
+\end{document}
