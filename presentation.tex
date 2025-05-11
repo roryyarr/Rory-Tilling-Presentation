@@ -64,27 +64,32 @@
 \end{frame}
 
 \begin{frame}{Tessellations}
-    A tesselation is a covering of a surface
-\end{frame}
-
-\begin{frame}
-  \frametitle{Introduction, group operations}
-  % \begin{definition}[Types of Symmetries]
-  \begin{block}{Definition: Types of Symmetries}
-  \begin{itemize}
+    A tesselation is a covering of a surface of a plane 
+    \begin{itemize}
       \item Translations 
       \item Reflections
       \item Glide Reflections
       \item Rotations.
   \end{itemize}
-  % \end{definition}
-  \end{block}
 \end{frame}
+
+% \begin{frame}{Introduction, group operations}
+%   % \begin{definition}[Types of Symmetries]
+%   % \begin{block}{Definition: Types of Symmetries}
+%   % \begin{itemize}
+%   %     \item Translations 
+%   %     \item Reflections
+%   %     \item Glide Reflections
+%   %     \item Rotations.
+%   % \end{itemize}
+%   % \end{definition}
+%   % \end{block}
+% \end{frame}
 
 \begin{frame}{Translations }
 % \begin{block}{definition}
-     Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
-    a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
+    %  Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
+    % a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
 % \end{block}
    \begin{figure}
         \centering
@@ -103,9 +108,9 @@
 
 \begin{frame}{Reflections and Glide reflections}
     % \begin{definition}
-        Reflections: A reflection over a line through the origin is defined as follows\\
-        $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
-        Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
+        % Reflections: A reflection over a line through the origin is defined as follows\\
+        % $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
+        % Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
     % \end{definition}
     \begin{figure}
         \centering
@@ -117,12 +122,12 @@
 
 \begin{frame}{Rotations}
     % \begin{definition}
-        A rotation is a change of angle around a center point.
-        $R_\theta = \begin{bmatrix}
-            \cos\theta & -\sin\theta\\
-            \sin\theta & \cos\theta
-        \end{bmatrix}$ 
-        Where $\theta \in \{1,2,3,6\}.$ \cite{Angela:2023}
+        % A rotation is a change of angle around a center point.
+        % $R_\theta = \begin{bmatrix}
+        %     \cos\theta & -\sin\theta\\
+        %     \sin\theta & \cos\theta
+        % \end{bmatrix}$ 
+        % Where $\theta \in \{1,2,3,6\}.$ \cite{Angela:2023}
     % \end{definition}
     \begin{figure}
         \centering
@@ -143,10 +148,10 @@
 \end{frame}
 
 \begin{frame}{Lattices}
-    \begin{definition}
+    % \begin{definition}
         A lattice is the group $(\mathbb{Z}[\Vec{a},\Vec{b}],+).$\\
         i.e., a grid of points where any point $p = n\Vec{a} +m\Vec{b}$ 
-    \end{definition}
+    % \end{definition}
     \begin{figure}
         \centering
         \scalebox{0.5}{\input{diagrams/lattice-diagram}}
@@ -159,13 +164,13 @@
     \begin{enumerate}
         \item[(a)] Square:\hspace*{14pt} $||\vec{a}||=||\vec{b}|| < ||\vec{a}-\vec{b}|| = ||\vec{a}+\vec{b}||$
 
-        \item[(b)] Hexagon:\hspace*{7pt} $||\vec{a}||=||\vec{b}|| = ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
+        \item[(b)] Hexagon:\hspace*{6pt} $||\vec{a}||=||\vec{b}|| = ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
 
         \item[(c)] Rectangle: $||\vec{a}||<||\vec{b}|| < ||\vec{a}-\vec{b}|| = ||\vec{a}+\vec{b}||$
 
-        \item[(d)] Rhombic:\hspace*{5pt} $||\vec{a}||<||\vec{b}|| = ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
+        \item[(d)] Rhombic:\hspace*{6pt} $||\vec{a}||<||\vec{b}|| = ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
 
-        \item[(e)] Oblique:\hspace*{9pt} $||\vec{a}||<||\vec{b}|| < ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
+        \item[(e)] Oblique:\hspace*{11pt} $||\vec{a}||<||\vec{b}|| < ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
     \end{enumerate}
 \end{frame}
 
@@ -174,7 +179,7 @@
         \centering
         % \resizebox{0.9\columnwidth}{!}{%
         \input{diagrams/bravais-lattices}
-        \caption{All five two‐dimensional Bravais unit cells.}
+        \caption{All five two‐dimensional Bravais lattice cells.}
         \label{fig:bravis-lattices}
     \end{figure}
     % \input{diagrams/bravais-lattices}
@@ -201,16 +206,16 @@
   \begin{figure}
     \centering
     % left box, top-aligned
-    \begin{minipage}[t]{0.45\textwidth}
+    \begin{minipage}[t]{0.50\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p1}
-      \caption*{p1}
-    \end{minipage}\hfill%
+      \caption*{\texttt{p1}}
+    \end{minipage}\hspace{0cm}%
     % right box, top-aligned
     \begin{minipage}[t]{0.45\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p2}
-      \caption*{p2}
+      \caption*{\texttt{p2}}
     \end{minipage}
     \caption{lattice diagrams for oblique cells}
   \end{figure}
@@ -223,19 +228,19 @@
     \begin{minipage}[t]{0.32\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p4}
-      \caption*{p4}
+      \caption*{\texttt{p4}}
     \end{minipage}\hfill%
     % middle box, top-aligned
     \begin{minipage}[t]{0.32\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p4m}
-      \caption*{p4m}
+      \caption*{\texttt{p4m}}
     \end{minipage}\hfill
     % right box, top-aligned
     \begin{minipage}[t]{0.32\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p4g}
-      \caption*{p4g}
+      \caption*{\texttt{p4g}}
     \end{minipage}
     \caption{lattice diagrams for square cells}
   \end{figure}
@@ -249,27 +254,27 @@
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pm}
       \caption*{\texttt{pm}}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.29\textwidth}
+    \end{minipage}\hspace{1.cm5}
+    \begin{minipage}[t]{0.28\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pg}
       \caption*{\texttt{pg}}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.31\textwidth}
-      \centering
-      \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pmm}
-      \caption*{\texttt{pmm}}
     \end{minipage}
-
+    
     % \vspace{1em} % space between rows
 
     % ——— Bottom row: 2 cells ———
-    \begin{minipage}[t]{0.32\textwidth}
+    \begin{minipage}[t]{0.29\textwidth}
+      \centering
+      \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pmm}
+      \caption*{\texttt{pmm}}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.3\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pmg}
       \caption*{\texttt{pmg}}
-    \end{minipage}
-    \begin{minipage}[t]{0.32\textwidth}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.3\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/pgg}
       \caption*{\texttt{pgg}}
@@ -288,13 +293,13 @@
     \begin{minipage}[t]{0.45\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/cm}
-      \caption*{cm}
+      \caption*{\texttt{cm}}
     \end{minipage}\hfill%
     % right box, top-aligned
     \begin{minipage}[t]{0.45\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/cmm}
-      \caption*{cmm}
+      \caption*{\texttt{cmm}}
     \end{minipage}
     \caption{lattice diagrams for rhombic cells}
   \end{figure}
@@ -308,12 +313,12 @@
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p3}
       \caption*{\texttt{p3}}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.29\textwidth}
+    \end{minipage}\hspace{-0.5cm}
+    \begin{minipage}[t]{0.31\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p31m}
       \caption*{\texttt{p31m}}
-    \end{minipage}\hfill
+    \end{minipage}\hspace{-0.5cm}
     \begin{minipage}[t]{0.31\textwidth}
       \centering
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p31m}
