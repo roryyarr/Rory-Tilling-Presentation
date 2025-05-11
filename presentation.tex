@@ -25,6 +25,7 @@
 \usetikzlibrary {shapes.geometric}
 \usepackage{standalone} 
 \usepackage{svg}
+\usepackage{booktabs}
 
 
 % \setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
@@ -183,9 +184,8 @@
 \end{frame}
 
 \begin{frame}{Classification of wallpaper groups}
-    p and c refers to a primitive centred cells respectively.\\
-    
-        
+    p and c refer to primitive centred cells, respectively.
+
 \end{frame}
 
 \begin{frame}{Oblique patterns}
@@ -327,6 +327,28 @@
 
     \caption{Lattice diagrams for hexagon cells (\texttt{pm}, \texttt{pg}, \texttt{pmm}, \texttt{pmg}, \texttt{pgg}).}
   \end{figure}
+\end{frame}
+
+\begin{frame}{Subgroups}
+  \begin{table}
+    \centering
+    \begin{tabular}{@{} ll @{\qquad} ll @{}}
+      \toprule
+      \textbf{G} & \textbf{H} & \textbf{G} & \textbf{H} \\
+      \midrule
+      p1   & trivial                          & p4    & $\mathbb{Z}_4$              \\
+      p2   & $\mathbb{Z}_2$                   & p4m   & $D_4$                       \\
+      pm   & $\mathbb{Z}_2$                   & p4g   & $D_4$                       \\
+      pg   & $\mathbb{Z}_2$                   & p3    & $\mathbb{Z}_3$              \\
+      pmm  & $\mathbb{Z}_2\times\mathbb{Z}_2$ & p3m1  & $D_3$                       \\
+      pmg  & $\mathbb{Z}_2\times\mathbb{Z}_2$ & p31m  & $D_3$                       \\
+      pgg  & $\mathbb{Z}_2\times\mathbb{Z}_2$ & p6    & $\mathbb{Z}_6$              \\
+      cm   & $\mathbb{Z}_2$                   & p6m   & $D_6$                       \\
+      cmm  & $\mathbb{Z}_2\times\mathbb{Z}_2$ &       &                             \\
+      \bottomrule
+    \end{tabular}
+    \caption{Wallpaper groups \(G\) and their corresponding symmetry subgroups \(H\).} \cite{}
+  \end{table}
 \end{frame}
 
 
