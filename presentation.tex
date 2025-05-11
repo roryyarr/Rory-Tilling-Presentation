@@ -26,8 +26,13 @@
 \usepackage{standalone} 
 \usepackage{svg}
 
+
+% \setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+% \setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
 %Defines theorem enviroments
-\theoremstyle{definition}
+% \theoremstyle{definition}
+
+\usepackage{macros}
 
 
 \title[Tilling the Plane]{Tessellating the Plane: from periodic tilings to Hat and Spectre}
@@ -54,21 +59,23 @@
 
 \begin{frame}
   \frametitle{Introduction, group operations}
-  \begin{definition}[Types of Symmetries]
+  % \begin{definition}[Types of Symmetries]
+  \begin{block}{Definition: Types of Symmetries}
   \begin{itemize}
       \item Translations 
       \item Reflections
       \item Glide Reflections
       \item Rotations.
   \end{itemize}
-  \end{definition}
+  % \end{definition}
+  \end{block}
 \end{frame}
 
 \begin{frame}{Translations }
-\begin{definition}
+% \begin{block}{definition}
      Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
     a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
-\end{definition}
+% \end{block}
    \begin{figure}
         \centering
         \begin{tikzpicture}
@@ -85,11 +92,11 @@
 \end{frame}
 
 \begin{frame}{Reflections and Glide reflections}
-    \begin{definition}
+    % \begin{definition}
         Reflections: A reflection over a line through the origin is defined as follows\\
         $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
         Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
-    \end{definition}
+    % \end{definition}
     \begin{figure}
         \centering
         \input{diagrams/reflections-gildes}
@@ -99,14 +106,14 @@
 \end{frame}
 
 \begin{frame}{Rotations}
-    \begin{definition}
+    % \begin{definition}
         A rotation is a change of angle around a center point.
         $R_\theta = \begin{bmatrix}
             \cos\theta & -\sin\theta\\
             \sin\theta & \cos\theta
         \end{bmatrix}$ 
         Where $\theta \in \{1,2,3,6\}.$ \cite{Angela:2023}
-    \end{definition}
+    % \end{definition}
     \begin{figure}
         \centering
         \input{diagrams/rotations}
@@ -220,7 +227,8 @@
 \end{frame}
 
 \begin{frame}{resourses}
-    https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile
+    % \hyperlink{Numberphile interview with Graig Kaplan}{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}
+    % https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile
 \end{frame}
 
 \begin{frame}{References}
