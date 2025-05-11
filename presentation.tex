@@ -27,6 +27,15 @@
 \usepackage{svg}
 \usepackage{booktabs}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
 
 % \setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
 % \setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
@@ -347,7 +356,7 @@
       cmm  & $\mathbb{Z}_2\times\mathbb{Z}_2$ &       &                             \\
       \bottomrule
     \end{tabular}
-    \caption{Wallpaper groups \(G\) and their corresponding symmetry subgroups \(H\).} \cite{}
+    \caption{Wallpaper groups \(G\) and their corresponding symmetry subgroups \(H\).} \cite{sasse_2020}
   \end{table}
 \end{frame}
 
@@ -378,17 +387,60 @@
 \end{frame}
 
 \begin{frame}{Metatiles}
-    
+    \begin{figure}
+        \centering
+        \includegraphics[page=1,width=\textwidth]{images/aperiodic-pdfs/alt_subst.pdf}
+        \caption{A metatile of the hat}
+        \label{fig:hat-metatile}
+    \end{figure}
 \end{frame}
+
+% \begin{frame}{Other polykites}
+%     \begin{figure}
+%         \centering
+%         \begin{minipage}[width=0.24\textwidth]
+%             \centering
+%             \includegraphics[\linewidth]{images/polykite-family/chevron(0,1).png}
+%         \end{minipage} \hfill
+%         \begin{minipage}[width=0.24\textwidth]
+%             \centering
+%             \includegraphics[\linewidth]{images/polykite-family/tile(1,4).png}
+%         \end{minipage} \hfill
+%         \begin{minipage}[width=0.24\linewidth]
+%             \centering
+%             \includegraphics[\linewidth]{images/polykite-family/hat(1,sqrt(3)).png}
+%         \end{minipage} \hfill
+%         \begin{minipage}[width=0.24\textwidth]
+%             \centering
+%             \includegraphics[\linewidth]{images/polykite-family/tile(1,1).png}
+%         \end{minipage}
+%         \caption{Caption}
+%         \label{fig:enter-label}
+%     \end{figure}
+% \end{frame}
 
 \begin{frame}{The Spectre}
     Shortly after their groundbreaking paper they were able to add a chirality to the tile and aperiodically tile the plane without mirrors.
-    \includegraphics[width=0.3\linewidth]{images/Spectre_aperiodic_monotile_single.svg.png}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{images/aperiodic-pdfs/polygon_to_spectre.pdf}
+        \caption{From the turtle to the spectre}
+        \label{fig:turle-spectra}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{The Spectre}
-    \includesvg[width=0.8\textwidth]{images/Spectre_aperiodic_monotile_single.svg}
+\begin{frame}{Family of polykites}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{images/polykite-family/monotile-continuum.png}
+        \caption{Family of poly-kites and the spectre}
+        \label{fig:poly-kites-spectre}
+    \end{figure}
 \end{frame}
+
+% \begin{frame}{The Spectre}
+%     \includesvg[width=0.8\textwidth]{images/Spectre_aperiodic_monotile_single.svg}
+% \end{frame}
 
 \begin{frame}{GitHub}
     \begin{figure}
@@ -400,8 +452,11 @@
 \end{frame}
 
 \begin{frame}{resourses}
-    % \hyperlink{Numberphile interview with Graig Kaplan}{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}
-    % https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile
+    \begin{itemize}
+        \item \href{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}{Numberphile interview with Graig Kaplan}
+        \item \href{https://ms.unimelb.edu.au/__data/assets/pdf_file/0011/5218382/vujamie_296128_22162633_Jamie_Vu_Poster_final.pdf}{Posture from Melbourne student}
+        \item href{https://cs.uwaterloo.ca/~csk/spectre/app.html}{Interactive web}
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{References}
