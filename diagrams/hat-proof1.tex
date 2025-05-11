@@ -1,0 +1,42 @@
+\documentclass[class=beamer, crop=false]{standalone}
+
+\usepackage{tikz}
+\usepackage{subcaption}
+\usetikzlibrary{calc}
+
+
+\begin{document}
+
+\begin{tikzpicture}[
+  node distance=8mm and 0mm,
+  process/.style={
+    rectangle, 
+    rounded corners, 
+    draw,
+    fill=blue!10, 
+    text width=7cm, 
+    align=center, 
+    minimum height=1cm
+  },
+  arrow/.style={thick, -{Stealth[]}}
+]
+  % Nodes
+  \node[process] (P1) {Polykites with periodic tilings have aligned periodic tilings\\(Lemma A.5)};
+  \node[process, below=of P1] (P2) {Polyforms with aligned weakly periodic tilings have aligned strongly periodic tilings\\(cf. [GS16, Thm 3.7.1])};
+  \node[process, below=of P2] (P3) {The hat polykite does not have aligned strongly periodic tilings\\(Section 3)};
+  \node[process, below=of P3] (P4) {Clusters of hat polykites can form metatiles\\(Section 2)};
+  \node[process, below=of P4] (P5) {Metatiles have a substitution system forming combinatorially equivalent supertiles\\(Sections 2 & 5)};
+  \node[process, below=of P5] (P6) {Metatiles tile the plane};
+  \node[process, below=of P6] (P7) {Hat polykites tile the plane};
+  \node[process, below=of P7] (P8) {The hat polykite is strongly aperiodic};
+  \node[process, below=of P8] (P9) {All \(\mathrm{Tile}(a,b)\) for positive \(a\neq b\) are strongly aperiodic};
+  \node[process, below=of P9] (P10){Tilings by \(\mathrm{Tile}(a,b)\) are combinatorially equivalent to those by the hat polykite for \(a\neq b\)\\(Section 6)};
+  
+  % Arrows
+  \foreach \i/\j in {P1/P2,P2/P3,P3/P4,P4/P5,P5/P6,P6/P7,P7/P8,P8/P9,P9/P10}{
+    \draw[arrow] (\i) -- (\j);
+  }
+\end{tikzpicture}
+
+
+\end{document}
