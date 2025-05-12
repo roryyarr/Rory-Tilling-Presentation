@@ -199,8 +199,11 @@
 \end{frame}
 
 \begin{frame}{Classification of wallpaper groups}
-    p and c refer to primitive centred cells, respectively.
-
+    \begin{enumerate}
+        \item p and c refer to primitive centred cells, respectively.
+        \item the first number refers to the rotational order of the cell. 
+        \item m and g refer to mirror(reflections) and glide(reflections) restectively. 
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}{Oblique patterns}
@@ -367,22 +370,30 @@
 \end{frame}
 
 
-\begin{frame}{Hilbert 18th problem}
-    In 1902 David Hilbert posed 23 problems for mathemiticians to 
+\begin{frame}{Are all tilings periodic?}
+    \begin{itemize}
+        \item In 1902 David Hilbert posed 23 open problems for mathematicians of his time to solve. \item His 18th problem assumed that it was not possible to have a non-periodic. \cite{hilbert1902mathematical}
+        \item Hilbert was wrong as I will show you now!
+        \end{itemize}
 \end{frame}
 
 \begin{frame}{Wang tiles}
-    In 1962 Hao Wang conjectured the following set of tiles can only tile the plane aperiodically.
+    \begin{itemize}
+        \item In the 1962 Hao Wang created a way to construct sets of tiles that only tiled the plane aperiodically.
+        \item In 1966 Robert Berger proved that a set of 20426 Wang tiles was aperiodic. \cite{berger1966undecidability}
+        \item Which was reduced down to the set of 11 Wang tiles below by\cite{Jeandel2021aperiodic}.
+    \end{itemize}
+    
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{images/other-tiles/Wang_11_tiles.svg.png}
+        \includegraphics[width=0.4\linewidth]{images/other-tiles/Wang_11_tiles.svg.png}
         \caption{Wang tiles\cite{wang11tiles}}
         \label{fig:wang-tiles}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Robinson Tiles}
-    In 1971 Raphael Robinson from Berkeley show the following 6 tiles only aperiodically.
+    In 1971 Raphael Robinson from Berkeley show the following 6 tiles only aperiodically tile the plane.\cite{robinson1971}
     \begin{figure}
         \centering
         \includegraphics[width=0.5\linewidth]{images/other-tiles/Robinson_tiles.svg.png}
@@ -391,7 +402,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Penrose Tilling}
+\begin{frame}{Penrose Tilling P1}
     \begin{figure}
         \centering
         \includegraphics[width=0.5\linewidth]{images/penrose/Penrose_Tiling_(P1).svg.png}
@@ -400,26 +411,47 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Penrose Tilling}
+\begin{frame}{Penrose Tilling P2}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{images/penrose/Penrose_Tiling_(Rhombi).svg}
-        \caption{Rhombic Penrose tilling \cite{penrose_tiling_rhombi}}
+        \includegraphics[width=0.5\linewidth]{images/penrose/pquilt_final.jpg}
+        \caption{Quit of P2 penrose tilling by Matt Zucker.\cite{zucker2022penrosequilt}}
+        \label{fig:penrose-p2}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Penrose Tilling P3}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\linewidth]{images/penrose/Penrose_Tiling_(Rhombi).svg}
+        \caption{Rhombic Penrose tilling (p1)\cite{penrose_tiling_rhombi}}
         \label{fig:penrose-rhombi}
     \end{figure}
 \end{frame}
 
 \begin{frame}{The Einstein("One Tile") problem}
-    Is it possible to tile a plane using a single tile that only tiles aperiodically.
+    \begin{itemize}
+        \item Is it possible to tile a plane using a single tile that only tiles aperiodically.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{The Hat}
-    In 2023 Smith,Myers,Kaplan and Goodman-Strauss proved that the the hat
+    \begin{itemize}
+        \item In 2022 the hobbyist David Smith discovered the "Hat" monotile.
+        \item He then reached out to Craig Kaplan and other mathematicians to prove that it tiles the plane only aperiodically\cite{Smith_2024}.
+    \end{itemize}
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/aperiodic-pdfs/polykite_tiling_raster.pdf}
+        \caption{Hat tilling}
+        \label{fig:hat-monotile}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{Proof sketch}
+% \begin{frame}{Proof sketch}
     
-\end{frame}
+% \end{frame}
 
 \begin{frame}{Metatiles}
     \begin{figure}
@@ -441,7 +473,7 @@
 \end{frame}
 
 \begin{frame}{The Spectre}
-    Shortly after their groundbreaking paper they were able to add a chirality to the tile and aperiodically tile the plane without mirrors.
+    Shortly after their groundbreaking paper they were able to add a chirality to the tile and aperiodically tile the plane without mirrors. \cite{Smith_2024_chiral}
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{images/aperiodic-pdfs/polygon_to_spectre.pdf}
@@ -467,16 +499,18 @@
     \begin{figure}
         \centering
         \includegraphics[width=0.6\textwidth]{images/qr-codes/tilling-presentation-github.png}
-        \caption{GitHub}
+        \caption{QR code for these slides on my GitHub}
         \label{fig:github-qrcode}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Resourses}
+\begin{frame}[allowframebreaks]{Other Resources}
     \begin{itemize}
-        \item \href{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}{Numberphile interview with Graig Kaplan}
-        \item \href{https://ms.unimelb.edu.au/__data/assets/pdf_file/0011/5218382/vujamie_296128_22162633_Jamie_Vu_Poster_final.pdf}{Posture from Melbourne student}
-        \item href{https://cs.uwaterloo.ca/~csk/spectre/app.html}{Interactive web}
+        \item \href{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}{Numberphile interview with Graig Kaplan.}
+        \item \href{https://ms.unimelb.edu.au/__data/assets/pdf_file/0011/5218382/vujamie_296128_22162633_Jamie_Vu_Poster_final.pdf}{Poster from a University of Melbourne student(Jamie Vu).}
+        \item \href{https://cs.uwaterloo.ca/~csk/spectre/app.html}{App David Smith used to discover the hat monotile.}
+        \item \href{https://mzucker.github.io/2022/11/13/penrose-tiling-quilt.html}{Matt Zuckers quilt development webpage.}
+        \item \href{https://patentimages.storage.googleapis.com/f2/9b/08/1b79cb4e4c0f3f/US4133152.pdf}{Roger Penroses patent for his aperiodic tiling}
     \end{itemize}
 \end{frame}
 
