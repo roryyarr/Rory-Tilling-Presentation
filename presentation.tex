@@ -65,32 +65,28 @@
 \end{frame}
 
 \begin{frame}{Tessellations}
-    A tesselation is a covering of a surface of a plane 
-    \begin{itemize}
-      \item Translations 
-      \item Reflections
-      \item Glide Reflections
-      \item Rotations.
-  \end{itemize}
+    A \emph{tessellation} (or tiling) of the plane is a cover of shapes (tiles) that fill the plane with no gaps or overlaps.
+ 
 \end{frame}
 
-% \begin{frame}{Introduction, group operations}
-%   % \begin{definition}[Types of Symmetries]
-%   % \begin{block}{Definition: Types of Symmetries}
-%   % \begin{itemize}
-%   %     \item Translations 
-%   %     \item Reflections
-%   %     \item Glide Reflections
-%   %     \item Rotations.
-%   % \end{itemize}
-%   % \end{definition}
-%   % \end{block}
-% \end{frame}
+\begin{frame}{Group Operations of Tilings}
+    \begin{center}
+      \emph{Types of Symmetries}
+      \begin{itemize}
+          \item Translations 
+          \item Reflections
+          \item Glide Reflections
+          \item Rotations.
+      \end{itemize}
+    \end{center}
+\end{frame}
 
 \begin{frame}{Translations }
 % \begin{block}{definition}
-    %  Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
-    % a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
+    \begin{center}
+     Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
+    a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
+    \end{center}
 % \end{block}
    \begin{figure}
         \centering
@@ -107,12 +103,12 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Reflections and Glide reflections}
-    % \begin{definition}
-        % Reflections: A reflection over a line through the origin is defined as follows\\
-        % $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
-        % Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
-    % \end{definition}
+\begin{frame}{Reflections and Glide Reflections}
+    \begin{center}  
+        Reflections: A reflection over a line through the origin is defined as follows\\
+        $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
+        Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
+    \end{center}
     \begin{figure}
         \centering
         \input{diagrams/reflections-gildes}
@@ -122,14 +118,15 @@
 \end{frame}
 
 \begin{frame}{Rotations}
-    % \begin{definition}
-        % A rotation is a change of angle around a center point.
-        % $R_\theta = \begin{bmatrix}
-        %     \cos\theta & -\sin\theta\\
-        %     \sin\theta & \cos\theta
-        % \end{bmatrix}$ 
-        % Where $\theta \in \{1,2,3,6\}.$ \cite{Angela:2023}
-    % \end{definition}
+    \begin{center}
+        A rotation is a change of angle around a center point.
+        Or consider it as the linear transformation $R_\theta:T\rightarrow T_\theta$ 
+        $R_\theta = \begin{bmatrix}
+            \cos\theta & -\sin\theta\\
+            \sin\theta & \cos\theta
+        \end{bmatrix}$ 
+        where $\theta \in \{0,\frac{\pi}{2},\frac{\pi}{3},\frac{\pi}{6}\}.$  \cite{Angela:2023}
+    \end{center}
     \begin{figure}
         \centering
         \input{diagrams/rotations}
@@ -138,12 +135,12 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Frize Groups}
+\begin{frame}{Frieze Groups}
     \begin{figure}
         \centering
         % \input{diagrams/frize-groups/freizegroupdef}
         \input{diagrams/frieze-groups}
-        \caption{Freize groups}
+        \caption{Frieze groups by \cite{Tomruen:2015}}
         \label{fig:Freize}
     \end{figure}
 \end{frame}
@@ -162,6 +159,7 @@
 \end{frame}
 
 \begin{frame}{Bravais lattices}
+    \begin{center}
     \begin{enumerate}
         \item[(a)] Square:\hspace*{14pt} $||\vec{a}||=||\vec{b}|| < ||\vec{a}-\vec{b}|| = ||\vec{a}+\vec{b}||$
 
@@ -173,6 +171,7 @@
 
         \item[(e)] Oblique:\hspace*{11pt} $||\vec{a}||<||\vec{b}|| < ||\vec{a}-\vec{b}|| < ||\vec{a}+\vec{b}||$
     \end{enumerate}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Bravais Lattices}
@@ -193,20 +192,20 @@
         \centering
         % \input{diagrams/Wallpaper Group Diagrams/AllGroups}
         \input{diagrams/all-wallpaper-groups}
-        \caption{The 17 wallpaper groups \cite{}}
+        \caption{The 17 wallpaper groups, diagrams inspired by \cite{tomruen2011}.}
         \label{fig:17WallpaperGroups}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Classification of wallpaper groups}
-    \begin{enumerate}
+    \begin{itemize}
         \item p and c refer to primitive centred cells, respectively.
-        \item the first number refers to the rotational order of the cell. 
-        \item m and g refer to mirror(reflections) and glide(reflections) restectively. 
-    \end{enumerate}
+        \item The first number refers to the rotational order of the cell. 
+        \item m and g refer to mirror(reflections) and glide(reflections), respectively. 
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Oblique patterns}
+\begin{frame}{Oblique Cells}
   \begin{figure}
     \centering
     % left box, top-aligned
@@ -225,7 +224,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Square patterns}
+\begin{frame}{Square Cells}
   \begin{figure}
     \centering
     % left box, top-aligned
@@ -246,11 +245,11 @@
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/p4g}
       \caption*{\texttt{p4g}}
     \end{minipage}
-    \caption{lattice diagrams for square cells}
+    \caption{Lattice diagrams for square cells.}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Rectangle patterns}
+\begin{frame}{Rectangle Cells}
   \begin{figure}
     \centering
     % ——— Top row: 3 cells ———
@@ -284,13 +283,13 @@
       \caption*{\texttt{pgg}}
     \end{minipage}
 
-    \caption{Lattice diagrams for rectangle cells (\texttt{pm}, \texttt{pg}, \texttt{pmm}, \texttt{pmg}, \texttt{pgg}).}
+    \caption{Lattice diagrams for rectangle cells.}
   \end{figure}
 \end{frame}
 
 
 
-\begin{frame}{Rhombic patterns}
+\begin{frame}{Rhombic Cells}
   \begin{figure}
     \centering
     % left box, top-aligned
@@ -305,11 +304,11 @@
       \includestandalone[width=\linewidth]{diagrams/wallpaper-groups/cmm}
       \caption*{\texttt{cmm}}
     \end{minipage}
-    \caption{lattice diagrams for rhombic cells}
+    \caption{Lattice diagrams for rhombic cells.}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Hexagon patterns}
+\begin{frame}{Hexagon Cells}
   \begin{figure}
     \centering
     % ——— Top row: 3 cells ———
@@ -343,11 +342,11 @@
       \caption*{\texttt{p6m}}
     \end{minipage}
 
-    \caption{Lattice diagrams for hexagon cells (\texttt{pm}, \texttt{pg}, \texttt{pmm}, \texttt{pmg}, \texttt{pgg}).}
+    \caption{Lattice diagrams for hexagon cells.}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Subgroups}
+\begin{frame}{Subgroups of Wallpaper Groups}
   \begin{table}
     \centering
     \begin{tabular}{@{} ll @{\qquad} ll @{}}
@@ -377,7 +376,7 @@
         \end{itemize}
 \end{frame}
 
-\begin{frame}{Wang tiles}
+\begin{frame}{Wang Tiles}
     \begin{itemize}
         \item In the 1962 Hao Wang created a way to construct sets of tiles that only tiled the plane aperiodically.
         \item In 1966 Robert Berger proved that a set of 20426 Wang tiles was aperiodic. \cite{berger1966undecidability}
@@ -429,7 +428,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{The Einstein("One Tile") problem}
+\begin{frame}{The Einstein("One Tile") Problem}
     \begin{itemize}
         \item Is it possible to tile a plane using a single tile that only tiles aperiodically.
     \end{itemize}
@@ -462,7 +461,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Other polykites}
+\begin{frame}{A Family of Polykites}
     \begin{figure}
         \centering
         % \input{diagrams/other-polykites}
@@ -528,7 +527,7 @@
 %% Axuillary slides
 
 \begin{frame}{Appendices}
-    Other information
+    Below are my
 \end{frame}
 
 % \input{diagrams/appendix-slides}
