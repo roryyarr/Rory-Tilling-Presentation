@@ -27,6 +27,7 @@
 \usepackage{svg}
 \usepackage{booktabs}
 
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -192,7 +193,7 @@
         \centering
         % \input{diagrams/Wallpaper Group Diagrams/AllGroups}
         \input{diagrams/all-wallpaper-groups}
-        \caption{The 17 wallpaper groups }
+        \caption{The 17 wallpaper groups \cite{}}
         \label{fig:17WallpaperGroups}
     \end{figure}
 \end{frame}
@@ -366,15 +367,44 @@
 \end{frame}
 
 
-\begin{frame}{Hilbert problems}
-    
+\begin{frame}{Hilbert 18th problem}
+    In 1902 David Hilbert posed 23 problems for mathemiticians to 
+\end{frame}
+
+\begin{frame}{Wang tiles}
+    In 1962 Hao Wang conjectured the following set of tiles can only tile the plane aperiodically.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/other-tiles/Wang_11_tiles.svg.png}
+        \caption{Wang tiles\cite{wang11tiles}}
+        \label{fig:wang-tiles}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Robinson Tiles}
+    In 1971 Raphael Robinson from Berkeley show the following 6 tiles only aperiodically.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/other-tiles/Robinson_tiles.svg.png}
+        \caption{Robinson tiles\cite{robinsontiles}}
+        \label{fig:robinson-tile}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Penrose Tilling}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{images/Penrose_Tiling_(Rhombi).svg.png}
-        \caption{Penrose tilling}
+        \includegraphics[width=0.5\linewidth]{images/penrose/Penrose_Tiling_(P1).svg.png}
+        \caption{P1 Penrose tilling \cite{penrose_tiling_p1}}
+        \label{fig:penrose-p1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Penrose Tilling}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/penrose/Penrose_Tiling_(Rhombi).svg}
+        \caption{Rhombic Penrose tilling \cite{penrose_tiling_rhombi}}
         \label{fig:penrose-rhombi}
     \end{figure}
 \end{frame}
@@ -400,29 +430,15 @@
     \end{figure}
 \end{frame}
 
-% \begin{frame}{Other polykites}
-%     \begin{figure}
-%         \centering
-%         \begin{minipage}[width=0.24\textwidth]
-%             \centering
-%             \includegraphics[\linewidth]{images/polykite-family/chevron(0,1).png}
-%         \end{minipage} \hfill
-%         \begin{minipage}[width=0.24\textwidth]
-%             \centering
-%             \includegraphics[\linewidth]{images/polykite-family/tile(1,4).png}
-%         \end{minipage} \hfill
-%         \begin{minipage}[width=0.24\linewidth]
-%             \centering
-%             \includegraphics[\linewidth]{images/polykite-family/hat(1,sqrt(3)).png}
-%         \end{minipage} \hfill
-%         \begin{minipage}[width=0.24\textwidth]
-%             \centering
-%             \includegraphics[\linewidth]{images/polykite-family/tile(1,1).png}
-%         \end{minipage}
-%         \caption{Caption}
-%         \label{fig:enter-label}
-%     \end{figure}
-% \end{frame}
+\begin{frame}{Other polykites}
+    \begin{figure}
+        \centering
+        % \input{diagrams/other-polykites}
+        \includestandalone[width=0.75\linewidth]{diagrams/other-polykites}
+        \caption{Family of polykites}
+        \label{fig:other-polykites}
+    \end{figure}
+\end{frame}
 
 \begin{frame}{The Spectre}
     Shortly after their groundbreaking paper they were able to add a chirality to the tile and aperiodically tile the plane without mirrors.
@@ -456,7 +472,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{resourses}
+\begin{frame}{Resourses}
     \begin{itemize}
         \item \href{https://www.youtube.com/watch?v=_ZS3Oqg1AX0&ab_channel=Numberphile}{Numberphile interview with Graig Kaplan}
         \item \href{https://ms.unimelb.edu.au/__data/assets/pdf_file/0011/5218382/vujamie_296128_22162633_Jamie_Vu_Poster_final.pdf}{Posture from Melbourne student}
@@ -464,8 +480,14 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{References}
+% \begin{frame}{References}
     
+% \end{frame}
+
+\begin{frame}[allowframebreaks]{Bibliography}
+  \footnotesize
+  \bibliographystyle{plainnat}
+  \bibliography{presentation}
 \end{frame}
 
 
@@ -476,6 +498,8 @@
 \end{frame}
 
 % \input{diagrams/appendix-slides}
+
+
 
 
 \end{document}
