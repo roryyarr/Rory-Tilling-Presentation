@@ -2,9 +2,12 @@
 
 
 ## Description 
-This repository contains a presentation on I gave a talk in the [ART Seminar](http://math.soimeme.org/~arunram/ARTseminar.html) at the University of Melbourne on 13th of May 2025.
+This repository contains a presentation on I gave a [talk](https://roryyarr.github.io/Rory-Tilling-Presentation/rory-tilling-presentation.pdf) in the [ART Seminar](http://math.soimeme.org/~arunram/ARTseminar.html) at the University of Melbourne on 13th of May 2025.
 
 The talk specifically focused on periodic structures frieze groups, lattices and wallpaper groups. Then it shifted to aperiodic tillings, Wang tiles, Robinson tiles, Penrose tiles to the recent hat and spectre.
+
+You can view it through this link:
+- [https://roryyarr.github.io/Rory-Tilling-Presentation/rory-tilling-presentation.pdf](https://roryyarr.github.io/Rory-Tilling-Presentation/rory-tilling-presentation.pdf)
 
 ## Content
 - `rory-tilling-presentation.pdf`: The main presentation file.
@@ -64,8 +67,3 @@ flowchart TD
     D21-->|no| E22((cmm))
 ```
 
-### TeX Overflow
-- https://tex.stackexchange.com/questions/61437/penrose-tiling-in-tikz
-
-### Code
-- https://github.com/loopspace/tilings
