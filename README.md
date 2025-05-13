@@ -1,11 +1,13 @@
-# Tilling Presentation
+# Tessellating the Plane: from periodic tilling to the Hat and Spectre
 
 
-## Description
-This repository contains a presentation on tilling, specifically focusing on periodic to aperiodic tilling.
+## Description 
+This repository contains a presentation on I gave a talk in the [ART Seminar](http://math.soimeme.org/~arunram/ARTseminar.html) at the University of Melbourne on 13th of May 2025.
+
+The talk specifically focused on periodic structures frieze groups, lattices and wallpaper groups. Then it shifted to aperiodic tillings, Wang tiles, Robinson tiles, Penrose tiles to the recent hat and spectre.
 
 ## Content
-- `presentation.pdf`: The main presentation file.
+- `rory-tilling-presentation.pdf`: The main presentation file.
 - `presentation.tex`: The LaTeX source code for the presentation.
 - `presentation.bib`: The bibliography file for the presentation.
 - `diagrams/`: A directory containing all the tikz diagrams.
