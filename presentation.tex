@@ -72,6 +72,8 @@
 \begin{frame}{Group Operations of Tilings}
     \begin{center}
       \emph{Types of Symmetries}
+      We can think of any symmetry group as a pair $(\mathbf{v},M)$ for $\mathbf{v} \in \mathbb{R}^2$ and $M$ a linear transformation. Allowing a symmetry group operations to be defined as:
+      \[(\mathbf{w},N)(\mathbf{v},M)=(\mathbf{w}+N\mathbf{v},NM)\]
       \begin{itemize}
           \item Translations 
           \item Reflections
@@ -84,8 +86,11 @@
 \begin{frame}{Translations }
 % \begin{block}{definition}
     \begin{center}
-     Translations are repetitions of a pattern structure.  defined mathematically as follows \\ 
-    a mapping $t_a$ : $\mathbb{R}^2 \rightarrow \mathbb{R}^2$ where $x \rightarrow x + a $ where $x \in X$  \cite{Angela:2023}
+     Translations are repetitions of a pattern structure.   \\
+     \begin{align*}
+         % T_a : \mathbb{R}^2 &\rightarrow \mathbb{R}^2\\
+         T_a(\vec{x}) &=\vec{x}+a
+     \end{align*}\cite{Angela:2023}
     \end{center}
 % \end{block}
    \begin{figure}
@@ -105,9 +110,10 @@
 
 \begin{frame}{Reflections and Glide Reflections}
     \begin{center}  
-        Reflections: A reflection over a line through the origin is defined as follows\\
-        $Ref_l(v) =$ \(2\frac{v \cdot l}{l \cdot l}\)l - v\\ where v and l are vectors going through the line of origin.\\ 
-        Glide : A glide is a reflection followed by a translation.  \cite{Angela:2023}
+        Reflections on some line $\vec{l}$ can be defined as follows
+        \[R_{l}(\vec{x})= \frac{l\cdot \vec{x}}{l\cdot l}-\vec{x}\] 
+        Glide : A glide is a reflection followed by a translation. 
+        \[G_{l,a}(\vec{x})=R_l(\vec{x})+a\]\cite{Angela:2023}
     \end{center}
     \begin{figure}
         \centering
@@ -119,13 +125,14 @@
 
 \begin{frame}{Rotations}
     \begin{center}
-        A rotation is a change of angle around a center point.
-        Or consider it as the linear transformation $R_\theta:T\rightarrow T_\theta$ 
-        $R_\theta = \begin{bmatrix}
+        A rotation is a change of angle around a centre point.
+        \[R_\theta(\vec{x}) = \begin{bmatrix}
             \cos\theta & -\sin\theta\\
             \sin\theta & \cos\theta
-        \end{bmatrix}$ 
-        where $\theta \in \{0,\frac{\pi}{2},\frac{\pi}{3},\frac{\pi}{6}\}.$  \cite{Angela:2023}
+        \end{bmatrix}\cdot\vec{x}\] 
+        where $\theta \in [0,2\pi)$
+        % where $\theta \in \{0,\frac{\pi}{2},\frac{\pi}{3},\frac{\pi}{6}\}.$  
+        \cite{Angela:2023}
     \end{center}
     \begin{figure}
         \centering
@@ -452,12 +459,21 @@
     
 % \end{frame}
 
-\begin{frame}{Metatiles}
+\begin{frame}{Super Tiles and Metatiles}
     \begin{figure}
         \centering
-        \includegraphics[page=1,width=\textwidth]{images/aperiodic-pdfs/alt_subst.pdf}
+        \includegraphics[page=1,width=0.9\textwidth]{images/aperiodic-pdfs/alt_subst.pdf}
         \caption{A metatile of the hat. \cite{Smith_2024}}
         \label{fig:hat-metatile}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Super Tiles}
+    \begin{figure}
+        \centering
+        \includegraphics[page=1,width=0.8\textwidth]{images/aperiodic-pdfs/hexclusters.pdf}
+        \caption{Hexagonal super clusters\cite{Smith_2024}}
+        \label{fig:hex-superculsters}
     \end{figure}
 \end{frame}
 
@@ -476,12 +492,12 @@
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{images/aperiodic-pdfs/polygon_to_spectre.pdf}
-        \caption{From the turtle to the spectre. \cite{Smith_2024_chiral}}
+        \caption{From the hurtle to the spectre. \cite{Smith_2024_chiral}}
         \label{fig:turle-spectra}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Family of polykites}
+\begin{frame}{From the Polykites to the Spectre.}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{images/polykite-family/monotile-continuum.png}
